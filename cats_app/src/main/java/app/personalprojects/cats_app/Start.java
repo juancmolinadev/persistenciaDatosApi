@@ -4,6 +4,9 @@
  */
 package app.personalprojects.cats_app;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -32,8 +35,15 @@ public class Start {
 
             switch (menu_option) {
                 case 0:
-                    CatsService.seeCats();
+                {
+                    try {
+                        CatsService.seeCats();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
                     break;
+
                 default:
                     break;
             }
