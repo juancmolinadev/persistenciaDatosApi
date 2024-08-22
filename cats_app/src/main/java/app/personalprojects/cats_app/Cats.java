@@ -9,17 +9,19 @@ package app.personalprojects.cats_app;
  * @author MolinAnimation
  */
 public class Cats {
-
-    int id;
+    
+    ConfigProperties properties = ConfigProperties.getInstance();
+    
+    String id;
     String url;
-    String apikey = "live_RqRkIlUpoTozP8OvfJcvXSFVFa3OzY9utLdBcXTwrbjrBUcqFZ3Vj1UyUYPU3IUL";
+    String apikey = properties.getCatApiKey();
     String image;
 
-    public int getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

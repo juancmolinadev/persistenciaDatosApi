@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class Start {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         int menu_option = -1;
         String[] buttons = { "1. See cats", "2. Exit" };
