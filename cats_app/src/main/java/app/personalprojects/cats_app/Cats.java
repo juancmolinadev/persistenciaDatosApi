@@ -15,7 +15,8 @@ public class Cats {
     String id;
     String url;
     String apikey = properties.getCatApiKey();
-    String image;
+    String nickName;
+
 
     public String getId() {
         return this.id;
@@ -41,11 +42,21 @@ public class Cats {
         this.apikey = apikey;
     }
 
-    public String getImage() {
-        return this.image;
+    public ConfigProperties getProperties() {
+        return properties;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setProperties(ConfigProperties properties) {
+        this.properties = properties;
     }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+    
+
 }

@@ -1,4 +1,6 @@
 app\personalprojects\cats_app\Cats.class
+app\personalprojects\cats_app\CatsDAO.class
 app\personalprojects\cats_app\CatsService.class
+app\personalprojects\cats_app\ConnectionJDBC.class
 app\personalprojects\cats_app\Start.class
 app\personalprojects\cats_app\ConfigProperties.class
